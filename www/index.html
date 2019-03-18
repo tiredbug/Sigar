@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#2196f3">
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:">
+  <title>e-Pasien</title>
+  <link rel="stylesheet" href="css/framework7.bundle.min.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="apple-touch-icon" href="img/f7-icon-square.png">
+  <link rel="icon" href="img/f7-icon.png">
+</head>
+<body>
+  <div id="app">
+    <div class="statusbar"></div>
+    <div class="panel panel-left panel-cover">
+      <div class="page" style="background-image:url(img/user-img-background.jpg);background-repeat:no-repeat;">
+        <div class="page-content">
+          <div class="block-title" style="color:#fff;margin-bottom:0 !important"><a href="/homepage/" class="panel-close"><img src="img/pria.png" width="60px"></a></div>
+          <div class="block-title" style="color:#fff;margin-top:0 !important">
+            <p>Faisol Basoro <br> 415277</p>
+          </div>
+          <div class="block-title">Navigasi Utama</div>
+          <div class="list links-list">
+            <ul>
+              <li>
+                <a href="/" class="panel-close"><i class="f7-icons ios-only">home</i><i class="material-icons md-only">home</i> Halaman Depan</a>
+              </li>
+              <li>
+                <a href="/action-sheet/" class="panel-close"><i class="icon f7-icons">compose</i> Pendaftaran</a>
+              </li>
+              <li>
+                <a href="/badge/" class="panel-close"><i class="icon f7-icons">calendar_today</i> Jadwal Praktek</a>
+              </li>
+              <li>
+                <a href="/badge/" class="panel-close"><i class="icon f7-icons">business</i> Ketersediaan Kamar</a>
+              </li>
+              <li>
+                <a href="/walkthrough/" class="panel-close"><i class="icon f7-icons">message</i> Aduan Pelanggan</a>
+              </li>
+              <li>
+                <a href="/profile/" class="panel-close"><i class="icon f7-icons">person</i> Akun Pribadi Saya</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="view view-main view-init safe-areas" data-master-detail-breakpoint="800" data-url="/">
+      <div class="page">
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="left">
+              <a href="#" class="link icon-only panel-open" data-panel="left">
+                <i class="icon f7-icons ios-only">menu</i>
+                <i class="icon material-icons md-only">menu</i>
+              </a>
+            </div>
+            <div class="title sliding">RSUD H. Damanhuri</div>
+            <div class="right">
+              <a class="link icon-only" href="/pemberitahuan/">
+                <i class="icon f7-icons ios-only">person_round_fill<span class="badge color-red">5</span></i>
+                <i class="icon material-icons md-only">notifications<span class="badge color-red">5</span></i>
+              </a>
+              <a href="#" data-popover=".main-menu" class="link icon-only popover-open"><i class="material-icons">more_vert</i></a>
+            </div>
+            <div class="title-large">
+              <div class="title-large-text">RSUD H. Damanhuri</div>
+            </div>
+          </div>
+        </div>
+        <div class="popover main-menu">
+          <div class="popover-angle"></div>
+          <div class="popover-inner">
+            <div class="list">
+              <ul>
+                <li><a href="/about/" class="list-button item-link popover-close">About</a></li>
+                <li><a href="/settings/" class="list-button item-link popover-close">Settings</a></li>
+                <li><a href="/login/" class="list-button item-link popover-close">Log Out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="page-content">
+          <div data-pagination='{"el": ".swiper-pagination", "hideOnClick": true}' class="swiper-container swiper-init demo-swiper half">
+            <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" style="background-image:url(img/medical-2.jpg);background-position:center;background-repeat:no-repeat;background-size:cover;"></div>
+              <div class="swiper-slide" style="background-image:url(img/medical-1.jpg);background-position:center;background-repeat:no-repeat;background-size:cover;"></div>
+              <div class="swiper-slide" style="background-image:url(img/medical-3.jpg);background-position:center;background-repeat:no-repeat;background-size:cover;"></div>
+            </div>
+          </div>
+          <div class="block">
+            <div class="dashboard-area">
+              <div class="row">
+                <div class="col">
+                  <a href="/projects/">
+                    <div class="dash-widget">
+                      <div class="dash-widget-icon"><i class="icon f7-icons">compose</i></div>
+                      <div class="dash-widget-info">
+                        <h4>Daftar</h4>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="/projects/">
+                    <div class="dash-widget">
+                      <div class="dash-widget-icon"><i class="icon f7-icons">calendar_today</i></div>
+                      <div class="dash-widget-info">
+                        <h4>Jadwal</h4>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="/projects/">
+                    <div class="dash-widget">
+                      <div class="dash-widget-icon"><i class="icon f7-icons">business</i></div>
+                      <div class="dash-widget-info">
+                        <h4>Kamar</h4>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <a href="/projects/">
+                    <div class="dash-widget">
+                      <div class="dash-widget-icon"><i class="icon f7-icons">help</i></div>
+                      <div class="dash-widget-info">
+                        <h4>Bantuan</h4>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="/projects/">
+                    <div class="dash-widget">
+                      <div class="dash-widget-icon"><i class="icon f7-icons">message</i></div>
+                      <div class="dash-widget-info">
+                        <h4>Aduan</h4>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="/profile/">
+                    <div class="dash-widget">
+                      <div class="dash-widget-icon"><i class="icon f7-icons">person</i></div>
+                      <div class="dash-widget-info">
+                        <h4>Profil</h4>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-container swiper-init demo-swiper bpjs">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card facebook-card">
+                  <div class="card-header">
+                    <div class="facebook-avatar"><img src="img/logo-bpjs.png" width="36" height="36"/></div>
+                    <div class="facebook-name">Rujukan BPJS Kesehatan</div>
+                    <div class="facebook-date">No. Peserta : 0001925517194</div>
+                  </div>
+                  <div class="card-content card-content-padding">
+                    <div class="card-content-inner">
+                      <div class="facebook-profile">Tanggal Kunjungan : 2019-01-18</div>
+                      <div class="facebook-profile">Diagnosa : K04.1</div>
+                      <div class="facebook-profile">Status : Aktif</div><br>
+                      <img src="http://api.rshdbarabai.com/pasien-rest/barcode.php?text=0287G0020119Y000145&size=48&print=true">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card facebook-card">
+                  <div class="card-header">
+                    <div class="facebook-avatar"><img src="img/logo-bpjs.png" width="36" height="36"/></div>
+                    <div class="facebook-name">Rujukan BPJS Kesehatan</div>
+                    <div class="facebook-date">No. Peserta : 0001925517194</div>
+                  </div>
+                  <div class="card-content card-content-padding">
+                    <div class="card-content-inner">
+                      <div class="facebook-profile">Tanggal Kunjungan : 2019-01-03</div>
+                      <div class="facebook-profile">Diagnosa : K04</div>
+                      <div class="facebook-profile">Status : Aktif</div><br>
+                      <img src="http://api.rshdbarabai.com/pasien-rest/barcode.php?text=0287G0020119Y000098&size=48&print=true">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="list media-list sortable">
+            <ul>
+              <li>
+                <div class="item-content">
+                  <div class="item-media"><img src="https://cdn.framework7.io/placeholder/people-160x160-1.jpg" width="80"/></div>
+                  <div class="item-inner">
+                    <div class="item-title-row">
+                      <div class="item-title">Yellow Submarine</div>
+                      <div class="item-after">$15</div>
+                    </div>
+                    <div class="item-subtitle">Beatles</div>
+                    <div class="item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis tellus ut turpis condimentum, ut dignissim lacus tincidunt. Cras dolor metus, ultrices condimentum sodales sit amet, pharetra sodales eros. Phasellus vel felis tellus. Mauris rutrum ligula nec dapibus feugiat. In vel dui laoreet, commodo augue id, pulvinar lacus.</div>
+                  </div>
+                </div>
+                <div class="sortable-handler"></div>
+              </li>
+              <li>
+                <div class="item-content">
+                  <div class="item-media"><img src="https://cdn.framework7.io/placeholder/people-160x160-2.jpg" width="80"/></div>
+                  <div class="item-inner">
+                    <div class="item-title-row">
+                      <div class="item-title">Don't Stop Me Now</div>
+                      <div class="item-after">$22</div>
+                    </div>
+                    <div class="item-subtitle">Queen</div>
+                    <div class="item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis tellus ut turpis condimentum, ut dignissim lacus tincidunt. Cras dolor metus, ultrices condimentum sodales sit amet, pharetra sodales eros. Phasellus vel felis tellus. Mauris rutrum ligula nec dapibus feugiat. In vel dui laoreet, commodo augue id, pulvinar lacus.</div>
+                  </div>
+                </div>
+                <div class="sortable-handler"></div>
+              </li>
+              <li>
+                <div class="item-content">
+                  <div class="item-media"><img src="https://cdn.framework7.io/placeholder/people-160x160-3.jpg" width="80"/></div>
+                  <div class="item-inner">
+                    <div class="item-title-row">
+                      <div class="item-title">Billie Jean</div>
+                      <div class="item-after">$16</div>
+                    </div>
+                    <div class="item-subtitle">Michael Jackson</div>
+                    <div class="item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis tellus ut turpis condimentum, ut dignissim lacus tincidunt. Cras dolor metus, ultrices condimentum sodales sit amet, pharetra sodales eros. Phasellus vel felis tellus. Mauris rutrum ligula nec dapibus feugiat. In vel dui laoreet, commodo augue id, pulvinar lacus.</div>
+                  </div>
+                </div>
+                <div class="sortable-handler"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/framework7.bundle.min.js"></script>
+  <script src="js/routes.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
